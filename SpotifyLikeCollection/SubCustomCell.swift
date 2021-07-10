@@ -12,8 +12,6 @@ class SubCustomCell: UICollectionViewCell {
     lazy var imageView: UIImageView = {
         let img = UIImageView()
         img.contentMode = .scaleToFill
-        img.clipsToBounds = true
-        img.layer.cornerRadius = 16.0
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()
@@ -38,6 +36,8 @@ class SubCustomCell: UICollectionViewCell {
         self.contentView.addSubview(imageView)
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(artistLabel)
+        
+        // make sure when view out of bounds is clipped
         clipsToBounds = true
         imageView.image = #imageLiteral(resourceName: "annie")
         titleLabel.text = "Save your tears"

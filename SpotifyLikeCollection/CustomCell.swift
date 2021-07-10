@@ -35,7 +35,6 @@ class CustomCell: UICollectionViewCell {
         self.contentView.addSubview(sectionTitleLabel)
         self.contentView.addSubview(collectionView)
         backgroundColor = UIColor.systemPurple
-        clipsToBounds = true
         setupConstraint()
         
         // setup CV
@@ -60,7 +59,7 @@ class CustomCell: UICollectionViewCell {
 
 extension CustomCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        return 5
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
