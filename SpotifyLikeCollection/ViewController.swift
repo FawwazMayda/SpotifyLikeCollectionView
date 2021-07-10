@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         
         let cv = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height), collectionViewLayout: layout)
-        cv.backgroundColor = UIColor.systemPurple
+        cv.backgroundColor = UIColor.black
         return cv
     }()
     
@@ -47,7 +47,6 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CustomCell
-        cell.backgroundColor = .green
         return cell
     }
 }

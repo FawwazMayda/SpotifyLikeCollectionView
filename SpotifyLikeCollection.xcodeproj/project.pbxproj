@@ -14,6 +14,7 @@
 		4D50DC3F26996FE900662F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D50DC3E26996FE900662F06 /* Assets.xcassets */; };
 		4D50DC4226996FE900662F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D50DC4026996FE900662F06 /* LaunchScreen.storyboard */; };
 		4D50DC4B269974E100662F06 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50DC4A269974E100662F06 /* CustomCell.swift */; };
+		4D50DC4E2699901E00662F06 /* SubCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50DC4D2699901E00662F06 /* SubCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4D50DC4126996FE900662F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D50DC4326996FE900662F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D50DC4A269974E100662F06 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		4D50DC4D2699901E00662F06 /* SubCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4D50DC3726996FE800662F06 /* SceneDelegate.swift */,
 				4D50DC3926996FE800662F06 /* ViewController.swift */,
 				4D50DC4A269974E100662F06 /* CustomCell.swift */,
+				4D50DC4D2699901E00662F06 /* SubCustomCell.swift */,
 				4D50DC3B26996FE800662F06 /* Main.storyboard */,
 				4D50DC3E26996FE900662F06 /* Assets.xcassets */,
 				4D50DC4026996FE900662F06 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				4D50DC3626996FE800662F06 /* AppDelegate.swift in Sources */,
 				4D50DC4B269974E100662F06 /* CustomCell.swift in Sources */,
 				4D50DC3826996FE800662F06 /* SceneDelegate.swift in Sources */,
+				4D50DC4E2699901E00662F06 /* SubCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
