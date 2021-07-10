@@ -13,6 +13,7 @@ class SubCustomCell: UICollectionViewCell {
         let img = UIImageView()
         img.contentMode = .scaleToFill
         img.clipsToBounds = true
+        img.layer.cornerRadius = 16.0
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()
@@ -37,7 +38,7 @@ class SubCustomCell: UICollectionViewCell {
         self.contentView.addSubview(imageView)
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(artistLabel)
-        
+        clipsToBounds = true
         imageView.image = #imageLiteral(resourceName: "annie")
         titleLabel.text = "Save your tears"
         artistLabel.text = "Annie Leonhart"
@@ -60,9 +61,9 @@ class SubCustomCell: UICollectionViewCell {
         
         
         // img
-        imageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: contentView.topAnchor,constant: 0).isActive = true
         imageView.bottomAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -5.0).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,constant: 0).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,constant: 0).isActive = true
     }
 }

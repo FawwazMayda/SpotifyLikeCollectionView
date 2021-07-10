@@ -25,6 +25,7 @@ class CustomCell: UICollectionViewCell {
         layout.sectionInset = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
         
         let cv = UICollectionView(frame: frame,collectionViewLayout: layout)
+        cv.backgroundColor = UIColor.clear
         cv.translatesAutoresizingMaskIntoConstraints = false
         return cv
     }()
@@ -34,6 +35,7 @@ class CustomCell: UICollectionViewCell {
         self.contentView.addSubview(sectionTitleLabel)
         self.contentView.addSubview(collectionView)
         backgroundColor = UIColor.systemPurple
+        clipsToBounds = true
         setupConstraint()
         
         // setup CV
@@ -66,7 +68,7 @@ extension CustomCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
+        return CGSize(width: 180, height: 180)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
